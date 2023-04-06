@@ -1,0 +1,354 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  font-family: Josefin sans;
+  font-size: 1rem;
+}
+
+.head {
+  background: url(/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.menu {
+  height: 15px;
+}
+
+.list ul {
+  margin-left: 3rem;
+  list-style-type: none;
+  text-transform: UPPERCASE;
+  line-height: 50px;
+  margin-top: 150px;
+}
+
+.logo {
+  height: 25px;
+  z-index: 9999;
+}
+.menu {
+  z-index: 99999;
+}
+
+.nav:hover {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.hero p {
+  font-family: Alata;
+  line-height: 30px;
+  color: hsl(0, 0%, 55%);
+}
+
+.list {
+  background: black;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  transition: right 0.6s ease;
+  right: -1500px;
+}
+.open_list {
+  right: 1px;
+}
+.exper {
+  color: white;
+  padding: 0 1.9rem;
+  line-height: 35px;
+  border: 1px solid white;
+  margin-top: 130px;
+  word-wrap: break-word;
+  inline-size: 298px;
+  margin-bottom: 270px;
+  letter-spacing: 1px;
+}
+
+.immer {
+  display: flex;
+  justify-content: center;
+}
+
+.creat > h1 {
+  margin-bottom: 50px;
+}
+
+.creat-img,
+.footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  justify-content: center;
+}
+
+.h2 img {
+  position: relative;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.logos img:hover {
+  cursor: pointer;
+  border-bottom: 3px solid white;
+}
+.h2 img:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+.h2 h2 {
+  position: absolute;
+  z-index: 999;
+  color: white;
+
+  margin-top: 52px;
+  word-wrap: break-word;
+  left: 40px;
+  inline-size: 150px;
+  text-align: left;
+}
+
+.curio h1,
+.above h1,
+.fish h1 {
+  inline-size: 220px;
+}
+
+button {
+  padding: 0 3.5rem;
+  letter-spacing: 5px;
+  background: white;
+  border: 1px solid black;
+  font-weight: 400;
+}
+
+button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+.btn {
+  margin-top: 45px;
+  margin-bottom: 90px;
+}
+
+.footer {
+  background: black;
+  padding: 4rem 0;
+  color: white;
+  font-family: Alata;
+  line-height: 40px;
+  letter-spacing: 1px;
+  align-items: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin-left: -50px;
+}
+.footer p {
+  color: hsl(0, 0%, 55%);
+}
+.logos {
+  display: flex;
+  margin-bottom: -20px;
+  column-gap: 20px;
+}
+.logos img {
+  padding-bottom: 10px;
+}
+
+.creat {
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+}
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .head {
+    background: url(/images/desktop/image-hero.jpg);
+  }
+  .logo-div {
+    align-items: flex-end;
+  }
+
+  .hero {
+    display: flex;
+    margin-top: 100px;
+    text-align: left;
+    position: relative;
+  }
+  .h2 h2 {
+    left: 12%;
+    margin-top: 360px;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 9rem;
+  }
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+  }
+
+  .footer li:hover {
+    cursor: pointer;
+    border-bottom: 3px solid white;
+  }
+
+  .creat h1 {
+    margin-left: 8vw;
+  }
+
+  .btn {
+    position: absolute;
+    margin: 0;
+    top: 1300px;
+    right: 10px;
+  }
+
+  .arc h2,
+  .pocket h2 {
+    left: 33%;
+  }
+  .socc h2,
+  .curio h2 {
+    left: 55%;
+  }
+  .grid h2,
+  .fish h2 {
+    left: 75%;
+  }
+  .hero-comm {
+    position: relative;
+    background: white;
+    inline-size: 630px;
+    padding: 3rem 4rem;
+    top: 100px;
+    left: -100px;
+    padding-right: 140px;
+  }
+
+  .hero img {
+    content: url(/images/desktop/image-interactive.jpg);
+    width: 500px;
+    object-fit: contain;
+  }
+
+  .nav,
+  .immer,
+  .hero,
+  .btn {
+    padding: 1rem 8rem;
+  }
+  .list {
+    background: none;
+
+    position: static;
+    width: auto;
+    height: auto;
+    top: auto;
+    transition: none;
+    right: none;
+  }
+
+  .creat-img {
+    position: relative;
+    display: grid;
+    column-gap: 20px;
+    column-gap: 30px;
+    grid-template: repeat(2, auto) / repeat(4, 250px);
+  }
+
+  .earth img {
+    content: url(/images/desktop/image-deep-earth.jpg);
+  }
+  .curio img {
+    content: url(/images/desktop/image-curiosity.jpg);
+  }
+  .fish img {
+    content: url(/images/desktop/image-fisheye.jpg);
+  }
+  .above img {
+    content: url(/images/desktop/image-from-above.jpg);
+  }
+  .grid img {
+    content: url(/images/desktop/image-grid.jpg);
+  }
+  .socc img {
+    content: url(/images/desktop/image-soccer-team.jpg);
+  }
+  .arc img {
+    content: url(/images/desktop/image-night-arcade.jpg);
+  }
+  .pocket img {
+    content: url(/images/desktop/image-pocket-borealis.jpg);
+  }
+  .creat {
+    margin-top: 100px;
+    text-align: left;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .immer {
+    justify-content: left;
+  }
+  .exper {
+    inline-size: 26rem;
+    font-size: 20px;
+    padding-right: 3rem;
+    line-height: 40px;
+  }
+  .list ul {
+    display: flex;
+    column-gap: 15px;
+    font-family: Alata;
+    text-transform: Capitalize;
+  }
+
+  .list ul {
+    margin-top: 0;
+  }
+  .logos {
+    justify-content: right;
+  }
+}
